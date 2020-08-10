@@ -1,0 +1,31 @@
+// row = mysql_fetch_accoc();
+row = readLine();
+while(row){
+    // process one line
+    row = readLine();
+}
+
+
+row = readLine();
+while(row){
+    if(row format is wrong){
+        continus;  //go to AAA
+    }
+    if(row's data is n/a){
+        row = readLine();
+        continus; // go to AAA
+    }
+
+    // process one line
+    row = readLine();
+} // AAA
+
+
+====================
+
+while(row = readLine()){
+    if(row format is wrong){
+        continus;  //go to AAA
+    }
+    // process one line
+}

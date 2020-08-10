@@ -43,34 +43,37 @@
 $(document).ready(function () {
 
     $("#okButton").on('click', function () {
-        var total = 0;
+        var total = 15;
         var i = 1;
-        while (i <= 5) {
-            total += i;
-            i++;
-        }
-        report.innerHTML += `A, total = ${total} <br>`;
+        // while (i <= 5) {
+        //     total += i;
+        //     i++;
+        // }
+        // report.innerHTML += `A, total = ${total} <br>`;
         // 請用 for 迴圈的語法重寫一遍, 參考答案附於稍後
+        
+        // var total = 15;
+        // for (var i = 1 ; i<=5 ; i++){
+        //     total--;
+        // }
 
+        while(1){
+            if(total == 5){
+                break;
+            }
+            total -- ;
+        }   
 
+        report.innerHTML += `A, total = ${total} <br>`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        var datalist = [10,20,30];
+        // for(i= 0; i<3 ; i++){
+        //     var data = datalist[i];
+        //     alert(data);
+        // }
+        for(var data in datalist){
+            alert(data);
+        }
 
 
         // var total = 0;

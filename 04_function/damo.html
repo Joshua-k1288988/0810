@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showstar(){
+            alert("********");
+        }
+        function diny(cojny){
+            let star = "";
+            for(let i =1 ; i <=cojny && cojny<21 && cojny !=4 ; i++){
+                star += "*";
+            }
+            if(star == ""){
+                alert("輸入數值不正確\n請輸入１～２０，而且不能輸入４");
+            }
+            else{
+                alert(star + "\n123456");
+            }
+            
+        }
+
+        //showstar();
+        diny(4);
+    </script>
+</body>
+</html>
