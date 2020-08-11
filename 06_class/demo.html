@@ -11,8 +11,50 @@
     <div id="debug"></div>
 
     <script>
+        
+            class CAnimal {
+                constructor(){
+                    this._weight = 1;
+
+                }
+                get weight(){
+                    return this._weight;
+                }
+                set weight(value){
+                    //alert(value);
+                    if(value > 0 ){
+                        this._weight = value;
+                    }
+                }
+                makeSound() {
+                    alert("Animal: ...");
+                }
+                move(distance){
+                    alert(distance);
+                }
+            }
+            // let obj = new CAnimal();
+            // obj.weight = 3;
+            // obj.weight = -6;
+            // alert(obj._weight);
 
 
+            class dog extends CAnimal{
+                constructor(weightvalue, locationname){
+                    super(weightvalue);
+                    this.location = locationname;
+                    super.weight = weightvalue;
+                }
+                makeSound(){
+                    //super.makeSound();
+                    alert("Dog: woof");
+                }
+            }
+
+            let obj = new dog(3, "Taichung");
+            alert(obj.weight +"     "+ obj.location);
+            
+            obj.makeSound();
 
     </script>
 

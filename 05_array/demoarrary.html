@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "debug"></div>
+    <script>
+        let datalist = [0,1,2,3];
+        //let x = datalist.pop();
+        //let x = datalist.shift();
+        // let x = datalist.unshift("a");
+        // alert(x);
+        // datalist.push(4);
+
+        datalist.splice(2, 0, 1.1, 1.2, 1.3); 
+        //(第X陣列位置, 刪除Ｘ後的Ｙ個陣列數據, 新增陣列數據,新增陣列數據.......)
+        
+        debug.innerText = datalist.join(" | ")
+    </script>
+</body>
+</html>

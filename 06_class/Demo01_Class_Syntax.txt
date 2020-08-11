@@ -96,6 +96,9 @@
             }
         }
 
+
+        
+
         var objBox = new Box();
         objBox.paint("Blue");
         debug.innerHTML = objBox.color;
