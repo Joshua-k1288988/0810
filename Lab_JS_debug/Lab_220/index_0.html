@@ -38,7 +38,6 @@
 <script src="../js/bootstrap.min.js"></script>
 
 <script>
-    
     var mailList = [
         "jeremy.lin@gmail.com", 
         "derek.jeter@gmail.com",
@@ -48,7 +47,15 @@
         ];
     
     function sendMail(mailAddress) {
-        $("#report").append(mailAddress.toString() + "<br>");
+        try{
+            $("#report").append(mailAddress.toString() + "<br>");
+        }
+        catch(e){
+            //$("#report").append("電子郵件錯誤"+ "<br>");
+            $("#report").append(e.message+ "<br>");
+        }
+
+        
     }
     
     for (i = 0; i < mailList.length; i++) {
